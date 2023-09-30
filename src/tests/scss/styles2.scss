@@ -1,0 +1,9 @@
+@import url('./styles1');
+
+.my-element {
+  font-size: 20px;
+}
+
+.button {
+  @include button-styles;
+}

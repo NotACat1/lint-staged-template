@@ -1,0 +1,9 @@
+/* styles2.css */
+
+/* Подключаем первый файл */
+@import url('styles1.css');
+
+/* Добавляем стили для элемента с классом my-element */
+.my-element {
+  font-size: 20px;
+}
