@@ -1,6 +1,6 @@
 // Component2.jsx
 import React from 'react';
-import Component1 from './Component1';
+import Component1 from 'Component1';
 
 const Component2 = () => {
   return (
