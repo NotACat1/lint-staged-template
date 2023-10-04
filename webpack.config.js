@@ -77,28 +77,18 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|svg|jpg|gif|webp)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[contenthash].[ext]',
-              outputPath: 'img/',
-            },
-          },
-        ],
+        test: /\.(png|svg|jpg|gif|webp|ico)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[hash][ext][query]',
+        },
       },
       {
         test: /\.(mp4|mp3)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[contenthash].[ext]',
-              outputPath: 'media/',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'media/[hash][ext][query]',
+        },
       },
     ],
   },
